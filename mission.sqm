@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=10967;
+		nextID=10989;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6118;
+		nextID=6236;
 	};
 	class Camera
 	{
-		pos[]={4668.9268,124.72887,5168.3721};
-		dir[]={0.83420676,-0.34360385,0.43148175};
-		up[]={0.30522206,0.9390924,0.1578718};
-		aside[]={0.45945242,5.2165706e-07,-0.88828218};
+		pos[]={4315.7729,21.203373,4736.4683};
+		dir[]={0.2859666,-0.47482854,0.83232266};
+		up[]={0.15428753,0.88007838,0.44906294};
+		aside[]={0.94573712,-1.4901161e-08,-0.32493314};
 	};
 };
 binarizationWanted=0;
-sourceName="Namalsk_map_redax";
+sourceName="Escape_fom_namalsk";
 addons[]=
 {
 	"A3_Ui_F",
@@ -104,13 +104,15 @@ addons[]=
 	"A3_Structures_F_Enoch_Industrial_Pipes",
 	"A3_Structures_F_Argo_Decals_Horizontal",
 	"A3_Structures_F_Enoch_Walls_Pipe",
-	"A3_Structures_F_EPB_Civ_Garbage"
+	"A3_Structures_F_EPB_Civ_Garbage",
+	"rhsgref_c_troops",
+	"CUP_CAMP_Armory_Misc_Loudspeakers"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=41;
+		items=43;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -364,6 +366,18 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item41
+		{
+			className="rhsgref_c_troops";
+			name="GREF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item42
+		{
+			className="CUP_CAMP_Armory_Misc_Loudspeakers";
+			name="CUP_CAMP_Armory_Misc_Loudspeakers";
+		};
 	};
 };
 class DynamicSimulation
@@ -526,7 +540,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=29;
+		items=48;
 		class Item0
 		{
 			dataType="Layer";
@@ -60657,6 +60671,338 @@ class Mission
 			};
 			id=1741;
 			atlOffset=0.00071334839;
+		};
+		class Item29
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4842.8877,41.077961,6018.1953};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=10968;
+					type="rhsgref_nat_rifleman_aks74";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=10967;
+		};
+		class Item30
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4832.1626,44.503185,6111.48};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_1";
+			};
+			id=10971;
+			type="Loudspeakers_EP1";
+		};
+		class Item31
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4194.7505,402.8772,6614.5112};
+				angles[]={0.032316625,0,0.037394769};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_2";
+			};
+			id=10972;
+			type="Loudspeakers_EP1";
+		};
+		class Item32
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3947.3091,56.503185,7539.146};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_3";
+			};
+			id=10973;
+			type="Loudspeakers_EP1";
+		};
+		class Item33
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5062.7388,43.503185,8226.0771};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_4";
+			};
+			id=10974;
+			type="Loudspeakers_EP1";
+		};
+		class Item34
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4682.1655,27.045898,8916.0049};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_5";
+			};
+			id=10975;
+			type="Loudspeakers_EP1";
+		};
+		class Item35
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5834.4697,54.112972,8676.5713};
+				angles[]={0.00084572798,0,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_6";
+			};
+			id=10976;
+			type="Loudspeakers_EP1";
+		};
+		class Item36
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6440.6411,39.503185,9274.248};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_7";
+			};
+			id=10977;
+			type="Loudspeakers_EP1";
+		};
+		class Item37
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5715.1216,25.019869,9867.6895};
+				angles[]={0.0088768154,0,0.079208121};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_8";
+			};
+			id=10978;
+			type="Loudspeakers_EP1";
+		};
+		class Item38
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4834.6411,17.516037,10803.725};
+				angles[]={6.2798738,0,6.2623515};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_9";
+			};
+			id=10979;
+			type="Loudspeakers_EP1";
+			atlOffset=9.5367432e-07;
+		};
+		class Item39
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4461.8018,6.5752258,11194.414};
+				angles[]={0.020324232,0,0.0066323741};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_10";
+			};
+			id=10980;
+			type="Loudspeakers_EP1";
+			atlOffset=2.3841858e-07;
+		};
+		class Item40
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6710.8149,18.503185,11314.572};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_11";
+			};
+			id=10981;
+			type="Loudspeakers_EP1";
+		};
+		class Item41
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8219.9287,18.503185,10690.434};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_12";
+			};
+			id=10982;
+			type="Loudspeakers_EP1";
+		};
+		class Item42
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7820.3647,13.667534,7678.6909};
+				angles[]={6.2723603,0,6.2637548};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_13";
+			};
+			id=10983;
+			type="Loudspeakers_EP1";
+		};
+		class Item43
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7262.9873,242.33836,7070.2515};
+				angles[]={6.2798381,0,6.2729721};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_14";
+			};
+			id=10984;
+			type="Loudspeakers_EP1";
+		};
+		class Item44
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7051.3696,43.489639,5811.1318};
+				angles[]={6.2767444,0,6.2796984};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_15";
+			};
+			id=10985;
+			type="Loudspeakers_EP1";
+		};
+		class Item45
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5975.1982,34.146133,6698.7075};
+				angles[]={0.070799567,0,0.001544081};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_16";
+			};
+			id=10986;
+			type="Loudspeakers_EP1";
+			atlOffset=-1.9073486e-06;
+		};
+		class Item46
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6283.7207,45.494968,9373.9912};
+				angles[]={0.00069053395,0,0.002990101};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_17";
+			};
+			id=10987;
+			type="Loudspeakers_EP1";
+		};
+		class Item47
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6826.4316,19.364372,11161.148};
+				angles[]={0.032843608,0,6.2369838};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="Speeker_18";
+			};
+			id=10988;
+			type="Loudspeakers_EP1";
+			atlOffset=-9.5367432e-07;
 		};
 	};
 };

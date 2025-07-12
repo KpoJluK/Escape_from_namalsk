@@ -1,0 +1,61 @@
+﻿loadScreen = "Picture_general.jpg";
+overViewPicture="Picture_general.jpg";
+overViewPictureLocked="Picture_general.jpg";
+overviewText = $STR_Mission_name;
+OnLoadIntro = "Coop Mission";
+Author="KpoJIuK, help in scripts server ArmaA Support";
+onLoadName = $STR_Mission_name;
+onLoadMission = $STR_Missions_podpis;
+overviewTextLocked = $STR_Missions_podpis;
+
+class CfgDebriefing
+    {
+        class End1
+        {
+            title = $STR_Missions_Ending_1_title;
+            subtitle = $STR_Missions_Ending_1_subtitle;
+            description = $STR_Missions_Ending_1_description;
+        };
+        class End2
+        {
+            title = $STR_Missions_Ending_2_title;
+            subtitle = $STR_Missions_Ending_2_subtitle;
+            description = $STR_Missions_Ending_2_description;
+        };
+    };
+
+
+class CfgSounds
+{
+    sounds[] = {};
+        class Atmisfere_sound_1
+    {
+    name = "Atmosphere_music_1";
+    sound[] = {"music\atmosphere_music.ogg", 0.5, 1};
+    titles[]={};
+    };
+        class Sound_nonification
+    {
+    name = "nonification";
+    sound[] = {"sound\PDA S.T.A.L.K.E.R._Ha1U.ogg", 0.5, 1};
+    titles[]={};
+    };
+        class Sound_smex_monstra
+    {
+    name = "Smex_monstra";
+    sound[] = {"sound\smex.ogg", 1, 1};
+    titles[]={};
+    };
+        class Sound_kruk_ugroka
+    {
+    name = "Kruk_player";
+    sound[] = {"sound\kruk.ogg", 1, 1};
+    titles[]={};
+    };
+        class Sound_nonification_sirena
+    {
+    name = "nonification_sirena";
+    sound[] = {"sound\STALKER_Sirena.ogg", 20, 1,500};
+    titles[]={};
+    };
+};
