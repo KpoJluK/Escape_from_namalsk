@@ -1,36 +1,45 @@
+// [60] execVM "Scripts\vibros.sqf"
+
 params["_time_to_end"];
 
-time_to_end = _time_to_end;
+
+[2] spawn BIS_fnc_earthquake;
 
 // sound
-0 spawn{
-    for "_i" from 0 to ceil(time_to_end / 30) - 1 do 
+[_time_to_end] spawn{
+    params["_time_to_end"];
+    waitUntil{
+            _time_to_end = _time_to_end - 1;
+            sleep 1;
+            _time_to_end < 30
+        };
+    for "_i" from 0 to ceil(_time_to_end / 30) - 1 do 
     {
-        Speeker_1 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_2 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_3 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_4 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_5 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_6 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_7 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_9 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_10 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_11 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_12 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_13 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_14 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_15 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_16 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_17 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
-        Speeker_18 say3D ["Sound_nonification_sirena", 500, 1, false, 0];
+        Speeker_1 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_2 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_3 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_4 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_5 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_6 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_7 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_9 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_10 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_11 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_12 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_13 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_14 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_15 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_16 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_17 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
+        Speeker_18 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
         sleep 31;
     };
     
 };
 
-["ColorCorrections", 1500, [1, 0.4, 0, [0, 0, 0, 0], [1, 0, 0, 0], [1, 1, 1, 0]]] spawn 
+["ColorCorrections", 1500, [1, 0.4, 0, [0, 0, 0, 0], [1, 0, 0, 0], [1, 1, 1, 0]],0, _time_to_end] spawn 
 { 
- params ["_name", "_priority", "_effect", "_handle"]; 
+ params ["_name", "_priority", "_effect", "_handle", "_time_to_end"]; 
  while { 
   _handle = ppEffectCreate [_name, _priority]; 
   _handle < 0 
@@ -39,24 +48,34 @@ time_to_end = _time_to_end;
  }; 
  _handle ppEffectEnable true; 
  _handle ppEffectAdjust _effect; 
- _handle ppEffectCommit time_to_end;
+ _handle ppEffectCommit _time_to_end;
 };
 
 waitUntil{
     sleep 1;
-    time_to_end = time_to_end - 1;
-    if(time_to_end == 120 or time_to_end == 60 or time_to_end == 30 or time_to_end == 15 or time_to_end == 0)then{[4] spawn BIS_fnc_earthquake;};
-    {
-        if(((insideBuilding _x) isEqualTo 0) and time_to_end <= 30) then{_x setDamage (getDammage _x + 0.01)}
-    } forEach allPlayers;
-    time_to_end <= 0
+    _time_to_end = _time_to_end - 1;
+    if(_time_to_end == 120 or _time_to_end == 60 or _time_to_end == 30 or _time_to_end == 15 or _time_to_end == 0)then{[4] spawn BIS_fnc_earthquake;};
+
+    // проверка в заднии ли игрок
+    _startPos = getPosASL player; 
+    _endPos = [_startPos select 0, _startPos select 1, (_startPos select 2) + 20]; // Проверяем выше игрока 
+    _intersections = lineIntersectsWith [_startPos, _endPos, player]; 
+    if (count _intersections <= 0 and _time_to_end <= 30) then { 
+        player setDamage (getDammage player + 0.01)
+    };
+
+    _time_to_end <= 0
 };
 
 
+// проверка в заднии ли игрок
+_startPos = getPosASL player; 
+_endPos = [_startPos select 0, _startPos select 1, (_startPos select 2) + 20]; // Проверяем выше игрока 
+_intersections = lineIntersectsWith [_startPos, _endPos, player]; 
+if (count _intersections <= 0) then { 
+    player setDamage 1; 
+};
 
-{
-if((insideBuilding _x) isEqualTo 0) then{_x setDamage 1}
-} forEach allPlayers;
 
 ["ColorCorrections", 1500, [0.88, 0.88, 0, [0.2, 0.29, 0.4, -0.22], [1, 1, 1, 1.3], [0.15, 0.09, 0.09, 0.0]]] spawn  
 {  
@@ -69,5 +88,22 @@ if((insideBuilding _x) isEqualTo 0) then{_x setDamage 1}
  };  
  _handle ppEffectEnable true;  
  _handle ppEffectAdjust _effect;  
- _handle ppEffectCommit 120;  
+ _handle ppEffectCommit 60;
+ sleep 60;
+ ppEffectDestroy _handle;  
 };
+
+sleep 60;
+
+_coldEffect = ppEffectCreate ["colorCorrections", 1500];   
+_coldEffect ppEffectEnable true;   
+_coldEffect ppEffectAdjust [   
+    1,     // Яркость   
+    1.1,   // Контраст   
+    0.02,  // Компенсация   
+    [0.2, 0.2, 0.4, -0.1],  // Цветовой баланс (увеличиваем синий)   
+    [0.8, 0.9, 1.0, 0.5],   // Усиление синего и ослабление красного   
+    [0.2, 0.2, 0.2, 0]      // Лёгкая дымка   
+];   
+_coldEffect ppEffectCommit 0;   
+ 
