@@ -5,6 +5,8 @@ params["_time_to_end"];
 
 [2] spawn BIS_fnc_earthquake;
 
+hint localize "STR_warning_vibros";
+
 // sound
 [_time_to_end] spawn{
     params["_time_to_end"];
@@ -61,7 +63,7 @@ waitUntil{
     _endPos = [_startPos select 0, _startPos select 1, (_startPos select 2) + 20]; // Проверяем выше игрока 
     _intersections = lineIntersectsWith [_startPos, _endPos, player]; 
     if (count _intersections <= 0 and _time_to_end <= 30) then { 
-        player setDamage (getDammage player + 0.01)
+        player setDamage (getDammage player + 0.01); hint "Во время выброса нужно быть в здании в ином случаи Вы погибните!(нуженн перевод!)";
     };
 
     _time_to_end <= 0

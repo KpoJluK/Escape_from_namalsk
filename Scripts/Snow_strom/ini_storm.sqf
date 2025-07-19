@@ -31,6 +31,11 @@ null = ["_snowfall","_duration_storm","_ambient_sounds_al","_breath_vapors","_sn
 
 */
 
+//[50,0] execVM "Scripts\Snow_strom\ini_storm.sqf"
+
+params["_time_snow_storm", "_sleep"];
+
+hint localize "STR_snow_storm";
 
 60 setRain 1;
 []spawn{
@@ -44,15 +49,11 @@ null = ["_snowfall","_duration_storm","_ambient_sounds_al","_breath_vapors","_sn
 };
 
 
-sleep 60;
+sleep _sleep;
 
-_time_snow_storm = 300;
 
-[true,300,15,true,10,false,false,false,true,true] execvm "Scripts\Snow_strom\AL_snowstorm\al_snow.sqf";
+[true,_time_snow_storm,15,true,10,false,false,false,true,true] execvm "Scripts\Snow_strom\AL_snowstorm\al_snow.sqf";
 
-sleep 60;
-
-_time_snow_storm = 240;
 
 waitUntil{
 
@@ -61,7 +62,7 @@ waitUntil{
     _endPos = [_startPos select 0, _startPos select 1, (_startPos select 2) + 20]; // Проверяем выше игрока 
     _intersections = lineIntersectsWith [_startPos, _endPos, player]; 
     if ((count _intersections <= 0) or (vehicle player != player)) then { 
-        player setDamage (getDammage player + 0.01)
+        player setDamage (getDammage player + 0.01); hint "Во время снежного шторма нужно быть в здании или технике в ином случаи Вы будете получать урон!(нуженн перевод!)";
     };
 	sleep 1;
 	_time_snow_storm = _time_snow_storm - 1;
@@ -76,6 +77,6 @@ waitUntil{
 		_fog = _fog - 0.0010;
 		0 setFog [_fog];
 		sleep 0.1;
-		_fog <= 0.1;
+		_fog <= 0.4;
 		}
 };

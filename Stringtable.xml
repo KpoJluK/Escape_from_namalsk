@@ -1,176 +1,80 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Project name="Missions destination pripyat">
+<Project name="Mission Escape from Namalsk">
 	<Package name="Mission">
-		<Container name="Missions_zero_find_Cover">
-			<Key ID="STR_Mission_zero_zero_name">
-				<Original>Get to the Yanov Station</Original>
-				<English>Get to the Yanov Station</English>
-				<Russian>Дойти до станции Янов</Russian>
+		<Container name="Missions_one">
+			<Key ID="STR_Missions_one_name">
+				<Original>Wait until the snow storm is over</Original>
+				<English>Wait until the snow storm is over</English>
+				<Russian>Подождать пока закончится снежная буря</Russian>
 			</Key>
-			<Key ID="STR_Mission_zero_zero_Description">
-				<Original>The past group left a part of the supplies at the Yanov stations, as well as part of the explosives, you need to find these supplies</Original>
-				<English>The past group left a part of the supplies at the Yanov stations, as well as part of the explosives, you need to find these supplies</English>
-				<Russian>Прошлая группа оставила часть припасов на станции Янов, а так же часть взрывчатки, нужно отыскать эти припасы</Russian>
-			</Key>
-			<Key ID="STR_Mission_zero_one_name">
-				<Original>Find a shelter from a pretty, in the basement of the Yanov station</Original>
-				<English>Find a shelter from a pretty, in the basement of the Yanov station</English>
-				<Russian>Найти укрытие от выборса, в подвале станции Янов</Russian>
-			</Key>
-			<Key ID="STR_Mission_zero_one_Description">
-				<Original>Find shelter from the election</Original>
-				<English>Find shelter from the election</English>
-				<Russian>Найти укрытие от выборса</Russian>
+			<Key ID="STR_Missions_one_Description">
+				<Original>You need to wait until the snow storm is over</Original>
+				<English>You need to wait until the snow storm is over</English>
+				<Russian>Нужно подождать пока закончится снежная буря</Russian>
 			</Key>
 		</Container>
-		<Container name="Missions_one_destroy">
-			<Key ID="STR_Mission_one_name">
-				<Original>Destroy the tower</Original>
-				<English>Destroy the tower</English>
-				<Russian>Уничтожить вышку</Russian>
+		<Container name="Missions_two">
+			<Key ID="STR_Missions_two_name">
+				<Original>Find documents with call sign</Original>
+				<English>Find documents with call sign</English>
+				<Russian>Найти документы с позывными</Russian>
 			</Key>
-			<Key ID="STR_Mission_one_Description">
-				<Original>The tower is somewhere inside the bookstore, use explosives to destroy the eel destruction</Original>
-				<English>The tower is somewhere inside the bookstore, use explosives to destroy the eel destruction</English>
-				<Russian>Вышка находится где-то внутри книжного магазина, используйте взрывчатку, что бы уничтожить ееля уничтожения</Russian>
+			<Key ID="STR_Missions_two_Description">
+				<Original>You need to find documents with the call sign in order to pass yourself by the NAC and call the helicopter for evacuation</Original>
+				<English>You need to find documents with the call sign in order to pass yourself by the NAC and call the helicopter for evacuation</English>
+				<Russian>Нужно найти документы с позывными, что бы выдать себя за НАК и вызвать вертолет для эвакуации</Russian>
 			</Key>
-			<Key ID="STR_Mission_one_viska_Description">
-				<Original>Tower somewhere inside a bookstore</Original>
-				<English>Tower somewhere inside a bookstore</English>
-				<Russian>Вышка где то внутри книжного магазина</Russian>
-			</Key>
-			<Key ID="STR_Mission_two_viska_Description">
-				<Original>Tower somewhere on the roof of the hospital</Original>
-				<English>Tower somewhere on the roof of the hospital</English>
-				<Russian>Вышка где то на крыше госпиталя</Russian>
-			</Key>
-			<Key ID="STR_Mission_three_viska_Description">
-				<Original>Tower somewhere on the roof of the port</Original>
-				<English>Tower somewhere on the roof of the port</English>
-				<Russian>Вышка где то на крыше порта</Russian>
-			</Key>
-			<Key ID="STR_Mission_fore_viska_Description">
-				<Original>Tower somewhere inside the cinema "Prometheus"</Original>
-				<English>Tower somewhere inside the cinema "Prometheus"</English>
-				<Russian>Вышка где то внутри кинотеатра "Прометей"</Russian>
-			</Key>
-			<Key ID="STR_Mission_five_viska_Description">
-				<Original>Tower somewhere near the Ferris wheel</Original>
-				<English>Tower somewhere near the Ferris wheel</English>
-				<Russian>Вышка где то возле колеса обозрения</Russian>
-			</Key>
-			<Key ID="STR_Mission_six_viska_Description">
-				<Original>Tower somewhere on the roof of the jubilee building</Original>
-				<English>Tower somewhere on the roof of the jubilee building</English>
-				<Russian>Вышка где то на крыше здания Юбилейный</Russian>
-			</Key>
-			<Key ID="STR_Mission_sewen_viska_Description">
-				<Original>Tower somewhere in the pool</Original>
-				<English>Tower somewhere in the pool</English>
-				<Russian>Вышка где то в басейне</Russian>
+			<Key ID="STR_Missions_three_document_action">
+				<Original>Inspect the documents</Original>
+				<English>Inspect the documents</English>
+				<Russian>Осмотреть документы</Russian>
 			</Key>
 		</Container>
-		<Container name="Missions_two_run">
-			<Key ID="STR_Mission_two_name">
-				<Original>Hide from being thrown into the dungeon under the deli</Original>
-				<English>Hide from being thrown into the dungeon under the deli</English>
-				<Russian>Укрыться от выброса в подземелье под гастрономом</Russian>
+		<Container name="Missions_three">
+			<Key ID="STR_Missions_three_name">
+				<Original>Find documents with call sign</Original>
+				<English>Find documents with call sign</English>
+				<Russian>Найти документы с позывными</Russian>
 			</Key>
-			<Key ID="STR_Mission_two_Description">
-				<Original>Approaching the emission should be hidden from it deep underground</Original>
-				<English>Approaching the emission should be hidden from it deep underground</English>
-				<Russian>Приближается выброс нужно укрыться от него глубоко под землей</Russian>
-			</Key>
-	</Package>
-	<Package name="Marker">
-			<Container name="Missions_marker">
-				<Key ID="STR_Mission_Marker_name">
-					<Original>Missing group with explosives</Original>
-					<English>Missing group with explosives</English>
-					<Russian>Пропавшая группа со взрывчаткой</Russian>
-				</Key>
-			</Container>
-	</Package>
-	<Package name="Hint">
-		<Container name="Hints">
-			<Key ID="STR_Mission_hint_monster_start">
-				<Original>Attention, the rest of the towers began to work in an enhanced mode, hallucinations may be observed, be careful!</Original>
-				<English>Attention, the rest of the towers began to work in an enhanced mode, hallucinations may be observed, be careful!</English>
-				<Russian>Внимание остальные вышки начали работать в усиленном режиме могут наблюдаться галлюцинации будьте внимательны!</Russian>
-			</Key>
-			<Key ID="STR_Mission_hint_start_vubros">
-				<Original>Attention approaches the emission. Look for the shelter, there is little time left!!</Original>
-				<English>Attention approaches the emission. Look for the shelter, there is little time left!!</English>
-				<Russian>Внимание приближается выброс ищите укрытие, быстрее времени осталось мало!!</Russian>
+			<Key ID="STR_Missions_three_Description">
+				<Original>You need to find documents with the call sign in order to pass yourself by the NAC and call the helicopter for evacuation</Original>
+				<English>You need to find documents with the call sign in order to pass yourself by the NAC and call the helicopter for evacuation</English>
+				<Russian>Нужно найти документы с позывными, что бы выдать себя за НАК и вызвать вертолет для эвакуации</Russian>
 			</Key>
 		</Container>
 	</Package>
-	<Package name="Description">
-		<Container name="Start_mission_hint">
-			<Key ID="STR_Mission_hint_start_start">
-				<Original>The surroundings of Pripyati, not far from the station Yanov</Original>
-				<English>The surroundings of Pripyati, not far from the station Yanov</English>
-				<Russian>Окрестности Припяти, недалеко от станции Янов</Russian>
+	<Package name="Hints">
+		<Container name="Hint_start_mission">
+			<Key ID="STR_start_mission">
+				<Original>Brensk, South of the islands of Namalsk</Original>
+				<English>Brensk, South of the islands of Namalsk</English>
+				<Russian>Бренск, юг острова Намальск</Russian>
 			</Key>
 		</Container>
-		<Container name="Title missions">
-			<Key ID="STR_Mission_name">
-				<Original>Destination Pripyat</Original>
-				<English>Destination Pripyat</English>
-				<Russian>Место назначения Припять</Russian>
-			</Key>
-			<Key ID="STR_Missions_podpis">
-				<Original>A group of stalkers sneaks into Pripyat to destroy mind control towers that belong to the monolith</Original>
-				<English>A group of stalkers sneaks into Pripyat to destroy mind control towers that belong to the monolith</English>
-				<Russian>Группа сталкеров пробирается в припять для уничтожения вышек контроля сознания, которые принадлежат монолиту </Russian>
+		<Container name="Hint_warning_vibros">
+			<Key ID="STR_warning_vibros">
+				<Original>The earthquake means that the release is approaching! You have no more than 5 minutes to find a cover! The fortified should be with a durable crust!</Original>
+				<English>The earthquake means that the release is approaching! You have no more than 5 minutes to find a cover! The fortified should be with a durable crust!</English>
+				<Russian>Землетрисение значит что приближается выброс! У вас есть не более 5 мин что бы найти укритие! Укритые должно бысть с прочной крышой!</Russian>
 			</Key>
 		</Container>
-		<Container name="Description general missions">
-			<Key ID="STR_Missions_Brifing_1_name">
-				<Original>Background</Original>
-				<English>Background</English>
-				<Russian>Предыстория</Russian>
-			</Key>
-			<Key ID="STR_Missions_Brifing_1_Description">
-				<Original>Monolith installed special tower in pripyat, they zombie people who are suited too close.The first group of which managed to get a helmet with a sewn from psi effects disappeared, we only have their latest coordinates.You are part of the second group that is trying to destroy the tower, whatever the stalkers could go to Pripyat, on the way you lost all subversive charges, part of the explosives are in the cache at the Yanov station, and the rest of the missing group, your task will find all the tower and explodetheir</Original>
-				<English>Monolith installed special tower in pripyat, they zombie people who are suited too close.The first group of which managed to get a helmet with a sewn from psi effects disappeared, we only have their latest coordinates.You are part of the second group that is trying to destroy the tower, whatever the stalkers could go to Pripyat, on the way you lost all subversive charges, part of the explosives are in the cache at the Yanov station, and the rest of the missing group, your task will find all the tower and explodetheir</English>
-				<Russian>Монолит установил специальные вышки в Припяти, они зомбируют людей, которые подходят слишком близко. Первая группа которой удалось добыть шлема с зашитой от пси воздействия пропала, у нас есть только их последние координаты. Вы входите в состав второй группы которая пытается уничтожить вышки, что бы сталкеры могли пройти в припять, по пути вы потеряли все подрывные заряды, часть взрывчатки есть в тайнике на станции Янов, а остальные у пропавшой группы, Ваша задача будет найти все вышки и взорвать их.</Russian>
+		<Container name="Hint_warning_snow_storm">
+			<Key ID="STR_snow_storm">
+				<Original>Attention was snowing! This may mean that soon there may be a snow storm!During a snowstorm, you need to be in a building or equipment!</Original>
+				<English>Attention was snowing! This may mean that soon there may be a snow storm!During a snowstorm, you need to be in a building or equipment!</English>
+				<Russian>Внимание пошел снег! Это может означать что скоро может быть снежная буря! Во время снежной бури вам нужно находится в здании или технике!</Russian>
 			</Key>
 		</Container>
-	</Package>
-	<Package name="Description ending">
-		<Container name="Ending_1">
-			<Key ID="STR_Missions_Ending_1_title">
-				<Original>Mission completed!</Original>
-				<English>Mission completed!</English>
-				<Russian>Миссия пройдена!</Russian>
+		<Container name="Hint_warning_vehicle_in_fire">
+			<Key ID="STR_vehicle_stop_fire">
+				<Original>Use a fire extinguisher</Original>
+				<English>Use a fire extinguisher</English>
+				<Russian>Использовать огнетушитель</Russian>
 			</Key>
-			<Key ID="STR_Missions_Ending_1_subtitle">
-				<Original>Your group destroyed all the tower!And you survived!</Original>
-				<English>Your group destroyed all the tower!And you survived!</English>
-				<Russian>Ваша группа уничтожила все вышки! И Вы выжили!</Russian>
-			</Key>
-			<Key ID="STR_Missions_Ending_1_description">
-				<Original>Thank you for playing in my mission, come to me on the workshop I still have some interesting missions!</Original>
-				<English>Thank you for playing in my mission, come to me on the workshop I still have some interesting missions!</English>
-				<Russian>Спасибо, что сыграли в мою миссию, заходите ко мне на воркшом у меня еще есть несколько интересных миссий!</Russian>
-			</Key>
-		</Container>
-		<Container name="Ending_2">
-			<Key ID="STR_Missions_Ending_2_title">
-				<Original>Mission completed!</Original>
-				<English>Mission completed!</English>
-				<Russian>Mission completed!</Russian>
-			</Key>
-			<Key ID="STR_Missions_Ending_1_subtitle">
-				<Original>Your group destroyed all the tower!But you died</Original>
-				<English>Your group destroyed all the tower!But you died</English>
-				<Russian>Ваша группа уничтожила все вышки! Но Вы погибли</Russian>
-			</Key>
-			<Key ID="STR_Missions_Ending_1_description">
-				<Original>Thank you for playing in my mission, come to me on the workshop I still have some interesting missions!</Original>
-				<English>Thank you for playing in my mission, come to me on the workshop I still have some interesting missions!</English>
-				<Russian>Спасибо, что сыграли в мою миссию, заходите ко мне на воркшоп у меня еще есть несколько интересных миссий!</Russian>
+			<Key ID="STR_vehicle_in_fire">
+				<Original>Fire in the car!</Original>
+				<English>Fire in the car!</English>
+				<Russian>Пожар в машине!</Russian>
 			</Key>
 		</Container>
 	</Package>

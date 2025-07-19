@@ -47,7 +47,7 @@ while {STOP_burning_vehicle_car} do {
                             _vehicle_select = _this select 0;
                             _vehicle_action_id = [
                                 _vehicle_select,											// Object the action is attached to
-                                "Потушить машину",										// Title of the action
+                                localize "STR_vehicle_stop_fire",										// Title of the action
                                 "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",	// Idle icon shown on screen
                                 "\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa",	// Progress icon shown on screen
                                 "_this distance _target < 5",						// Condition for the action to be shown
@@ -100,7 +100,7 @@ while {STOP_burning_vehicle_car} do {
                     _time_to_destroid = random _time_to_burn_osnova;
                     // talk about vehicle in fine
                     [[], {
-                        if(vehicle player isNotEqualTo player)then{hint(parseText "<t color='#ff0000'><t size='2.0'>Машина горит!!!</t></t>");}
+                        if(vehicle player isNotEqualTo player)then{hint (parseText (format ["<t color='#ff0000' size='2.0'>%1</t>", localize "STR_vehicle_in_fire"]));}
                     }] remoteExec ["call",crew _vehicle_select];
                     // add sound 
 

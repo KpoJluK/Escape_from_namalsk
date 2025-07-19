@@ -1,11 +1,9 @@
 [ 
  [ 
-  [localize "STR_Mission_hint_start_start", nil, 30] 
+  [localize "STR_start_mission", nil, 30] 
  ], 
  0, safeZoneY + safeZoneH / 1.2] spawn BIS_fnc_typeText;
 
-
-//[] execVM "scripts\eqvip.sqf";
 
 player addEventHandler [
 	"Killed",
@@ -30,7 +28,7 @@ player addEventHandler [
 
 0 spawn{
 	while {true} do {
-		if(player inArea Podval) then{setAperture 150} else{setAperture 0};
+		if(player inArea Podval) then{setAperture 100} else{setAperture 0};
 		sleep 2;
 	};
 };

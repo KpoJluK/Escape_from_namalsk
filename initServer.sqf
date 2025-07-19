@@ -11,3 +11,5 @@
 ]execVM "Scripts\Vehicle_in_fire.sqf";
 
 //[]execVM "Scripts\loot.sqf";
+
+[60,0] execVM "Scripts\Scenario.sqf"
