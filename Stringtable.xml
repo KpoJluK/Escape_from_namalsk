@@ -24,7 +24,7 @@
 				<English>You need to find documents with the call sign in order to pass yourself by the NAC and call the helicopter for evacuation</English>
 				<Russian>Нужно найти документы с позывными, что бы выдать себя за НАК и вызвать вертолет для эвакуации</Russian>
 			</Key>
-			<Key ID="STR_Missions_three_document_action">
+			<Key ID="STR_Missions_two_document_action">
 				<Original>Inspect the documents</Original>
 				<English>Inspect the documents</English>
 				<Russian>Осмотреть документы</Russian>
@@ -32,14 +32,83 @@
 		</Container>
 		<Container name="Missions_three">
 			<Key ID="STR_Missions_three_name">
-				<Original>Find documents with call sign</Original>
-				<English>Find documents with call sign</English>
-				<Russian>Найти документы с позывными</Russian>
+				<Original>Hack the backup transmitter</Original>
+				<English>Hack the backup transmitter</English>
+				<Russian>Взломать резервный передатчик</Russian>
 			</Key>
 			<Key ID="STR_Missions_three_Description">
-				<Original>You need to find documents with the call sign in order to pass yourself by the NAC and call the helicopter for evacuation</Original>
-				<English>You need to find documents with the call sign in order to pass yourself by the NAC and call the helicopter for evacuation</English>
-				<Russian>Нужно найти документы с позывными, что бы выдать себя за НАК и вызвать вертолет для эвакуации</Russian>
+				<Original>We learned the call sign, and we can call a helicopter to fly away, you need to hack a radio station in order to transmit a signal</Original>
+				<English>We learned the call sign, and we can call a helicopter to fly away, you need to hack a radio station in order to transmit a signal</English>
+				<Russian>Мы узнали позывные, и можем вызвать вертолет что бы улетать, нужно взломать радиостанцию что бы передать сигнал</Russian>
+			</Key>
+			<Key ID="STR_Missions_three_terminal_action">
+				<Original>Hack terminal</Original>
+				<English>Hack terminal</English>
+				<Russian>Взломать терминал</Russian>
+			</Key>
+		</Container>
+		<Container name="Missions_fore">
+			<Key ID="STR_Missions_fore_name">
+				<Original>Find a helicopter</Original>
+				<English>Find a helicopter</English>
+				<Russian>Найти вертолет</Russian>
+			</Key>
+			<Key ID="STR_Missions_fore_Description">
+				<Original>The helicopter accepted the signal and will wait in the port, you need to find it, and fly away</Original>
+				<English>The helicopter accepted the signal and will wait in the port, you need to find it, and fly away</English>
+				<Russian>Вертолет принял сигнал и будет ждать в порту, нужно найти его, и улететь</Russian>
+			</Key>
+		</Container>
+		<Container name="Missions_five">
+			<Key ID="STR_Missions_five_name">
+				<Original>Find the radio station</Original>
+				<English>Find the radio station</English>
+				<Russian>Разыскать радиостанцию</Russian>
+			</Key>
+			<Key ID="STR_Missions_five_Description">
+				<Original>Someone got into a helicopter and flew without us, you need to find another radio station and try to contact the pilot</Original>
+				<English>Someone got into a helicopter and flew without us, you need to find another radio station and try to contact the pilot</English>
+				<Russian>Кто-то сел в вертолет и улетал без нас, нужно найти другую радиостанцию и попробовать связаться с пилотом</Russian>
+			</Key>
+			<Key ID="STR_Missions_five_action_rado">
+				<Original>Use the radio station</Original>
+				<English>Use the radio station</English>
+				<Russian>Воспользоватся радиостанцией</Russian>
+			</Key>
+		</Container>
+		<Container name="Missions_six">
+			<Key ID="STR_Missions_six_name">
+				<Original>Find the exit to the roof for evacuation by a helicopter</Original>
+				<English>Find the exit to the roof for evacuation by a helicopter</English>
+				<Russian>Найти выход на крышу для эвакуации вертолетом</Russian>
+			</Key>
+			<Key ID="STR_Missions_six_Description">
+				<Original>We managed to contact some civilian pilot, he said that he could take us from the roof of the house, we need to find a way out on one of the roofs</Original>
+				<English>We managed to contact some civilian pilot, he said that he could take us from the roof of the house, we need to find a way out on one of the roofs</English>
+				<Russian>Нам удалось связаться с каким-то гражданским пилотом он сказал что сможет забрать нас с крыши дома, нужно найти выход на одну из крыш</Russian>
+			</Key>
+		</Container>
+		<Container name="Missions_seven">
+			<Key ID="STR_Missions_seven_name">
+				<Original>Shoot up the signal flaire</Original>
+				<English>Shoot up the signal flaire</English>
+				<Russian>Выстрелить вверх сигнальным патроном</Russian>
+			</Key>
+			<Key ID="STR_Missions_seven_Description">
+				<Original>You need to designate yourself so that the pilot see us, there should be a pair of signal flaire on the roof</Original>
+				<English>You need to designate yourself so that the pilot see us, there should be a pair of signal flaire on the roof</English>
+				<Russian>Нужно обозначить себя, что бы пилот увидел нас, на крыше должны быть пара сигнальных ракет</Russian>
+			</Key>
+		</Container>
+		<Key ID="STR_Missions_eight_name">
+				<Original>Wait for a helicopter</Original>
+				<English>Wait for a helicopter</English>
+				<Russian>Ждать вертолет</Russian>
+			</Key>
+			<Key ID="STR_Missions_eight_Description">
+				<Original>You need to wait on the roof, the helicopter should be soon</Original>
+				<English>You need to wait on the roof, the helicopter should be soon</English>
+				<Russian>Нужно ждать на крыше, вертолет скоро должен прилететь</Russian>
 			</Key>
 		</Container>
 	</Package>

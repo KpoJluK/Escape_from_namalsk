@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6589;
+		nextID=6707;
 	};
 	class Camera
 	{
-		pos[]={4817.0503,18.502266,10817.292};
-		dir[]={0.83465332,-0.32670116,-0.44368351};
-		up[]={0.28853461,0.94509178,-0.15338096};
-		aside[]={-0.4694238,-7.8050653e-07,-0.88308704};
+		pos[]={6855.7969,62.630058,11360.364};
+		dir[]={0.89495426,-0.44028828,0.072946995};
+		up[]={0.43884057,0.89784735,0.035769016};
+		aside[]={0.081242517,1.8015271e-07,-0.99674541};
 	};
 };
 binarizationWanted=0;
@@ -61216,7 +61216,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={7947.7749,14.418247,7596.3926};
-				angles[]={0,0.70715094,-0};
+				angles[]={0,0.70715094,0};
 			};
 			side="Empty";
 			class Attributes
@@ -61424,7 +61424,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				createAsSimpleObject=1;
+				name="Radio_1";
 				disableSimulation=1;
 			};
 			id=11060;
@@ -61453,18 +61453,34 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6284.3848,56.322998,9381.46};
+				position[]={6284.0703,56.322556,9381.7461};
 				angles[]={0,3.2379348,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="Radio_1";
+				disableSimulation=1;
 			};
 			id=11061;
 			type="Vysilacka";
-			atlOffset=0.00044250488;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item40
 		{
