@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="Mission Escape from Namalsk">
+<Package name="Description">
+	</Container>
+		<Container name="Description_main">
+			<Key ID="STR_Mission_name">
+				<Original>Escape from Namalsk(story)</Original>
+				<English>Escape from Namalsk(story)</English>
+				<Russian>Побег с Намальска(Кампания)</Russian>
+			</Key>
+			<Key ID="STR_Missions_podpis">
+				<Original>You can find equipment in buildings, you can also search the corpses of zombies with them may be supplies</Original>
+				<English>You can find equipment in buildings, you can also search the corpses of zombies with them may be supplies</English>
+				<Russian>Вы можете найти снаряжение в зданиях также вы можете обыскать трупы зомби при них могут быть припасы</Russian>
+			</Key>
+		</Container>
+	</Package>
 	<Package name="Mission">
 		<Container name="Missions_one">
 			<Key ID="STR_Missions_one_name">
@@ -37,9 +52,9 @@
 				<Russian>Взломать резервный передатчик</Russian>
 			</Key>
 			<Key ID="STR_Missions_three_Description">
-				<Original>We learned the call sign, and we can call a helicopter to fly away, you need to hack a radio station in order to transmit a signal</Original>
-				<English>We learned the call sign, and we can call a helicopter to fly away, you need to hack a radio station in order to transmit a signal</English>
-				<Russian>Мы узнали позывные, и можем вызвать вертолет что бы улетать, нужно взломать радиостанцию что бы передать сигнал</Russian>
+				<Original>We learned the call sign, and we can call a helicopter to fly away, you need to hack a radio station in order to transmit a signal(the transmitter is scanty on the roof)</Original>
+				<English>We learned the call sign, and we can call a helicopter to fly away, you need to hack a radio station in order to transmit a signal(the transmitter is scanty on the roof)</English>
+				<Russian>Мы узнали позывные, и можем вызвать вертолет что бы улетать, нужно взломать радиостанцию что бы передать сигнал(передатчик скуорее всего на крыше)</Russian>
 			</Key>
 			<Key ID="STR_Missions_three_terminal_action">
 				<Original>Hack terminal</Original>
@@ -111,6 +126,35 @@
 				<Russian>Нужно ждать на крыше, вертолет скоро должен прилететь</Russian>
 			</Key>
 		</Container>
+		</Container>
+		<Key ID="STR_Missions_nine_name">
+				<Original>Find an officer and interrogate</Original>
+				<English>Find an officer and interrogate</English>
+				<Russian>Найти офицера и допросить</Russian>
+			</Key>
+			<Key ID="STR_Missions_nine_Description">
+				<Original>There was a hope that there is an officer on the military base who should know something from how to get out of the island ...</Original>
+				<English>There was a hope that there is an officer on the military base who should know something from how to get out of the island ...</English>
+				<Russian>Осталась надежда на то что на военной базе есть офицер который должен что-то знать как выбраться с острова...</Russian>
+			</Key>
+		</Container>
+		</Container>
+		<Key ID="STR_Missions_ten_name">
+				<Original>Find a helicopter and fly away from the islandr</Original>
+				<English>Find a helicopter and fly away from the island</English>
+				<Russian>Найти вертолет и улететь с острова</Russian>
+			</Key>
+			<Key ID="STR_Missions_ten_Description">
+				<Original>The officer said that the supply helicopter had just arrived, we can capture it and fly away from the island</Original>
+				<English>The officer said that the supply helicopter had just arrived, we can capture it and fly away from the island</English>
+				<Russian>Офицер рассказал что только что прибыл вертолет снабжения мы можем захватить его и улететь с острова</Russian>
+			</Key>
+			<Key ID="STR_Missions_ten_hint_warning">
+				<Original>If the helicopter receives severe damage during the battle, the task will be failed!</Original>
+				<English>If the helicopter receives severe damage during the battle, the task will be failed!</English>
+				<Russian>Если вертолет во время боя получит сильное повреждения, задание будет провалено!</Russian>
+			</Key>
+		</Container>
 	</Package>
 	<Package name="Hints">
 		<Container name="Hint_start_mission">
@@ -122,16 +166,21 @@
 		</Container>
 		<Container name="Hint_warning_vibros">
 			<Key ID="STR_warning_vibros">
-				<Original>The earthquake means that the release is approaching! You have no more than 5 minutes to find a cover! The fortified should be with a durable crust!</Original>
-				<English>The earthquake means that the release is approaching! You have no more than 5 minutes to find a cover! The fortified should be with a durable crust!</English>
-				<Russian>Землетрисение значит что приближается выброс! У вас есть не более 5 мин что бы найти укритие! Укритые должно бысть с прочной крышой!</Russian>
+				<Original>The earthquake means that the release is approaching! You have no more than 3 minutes to find a cover! The fortified should be with a durable crust!</Original>
+				<English>The earthquake means that the release is approaching! You have no more than 3 minutes to find a cover! The fortified should be with a durable crust!</English>
+				<Russian>Землетрисение значит что приближается выброс! У вас есть не более 3 мин что бы найти укритие! Укритые должно бысть с прочной крышой!</Russian>
 			</Key>
 		</Container>
 		<Container name="Hint_warning_snow_storm">
 			<Key ID="STR_snow_storm">
-				<Original>Attention was snowing! This may mean that soon there may be a snow storm!During a snowstorm, you need to be in a building or equipment!</Original>
-				<English>Attention was snowing! This may mean that soon there may be a snow storm!During a snowstorm, you need to be in a building or equipment!</English>
+				<Original>Attention was snowing! This may mean that soon there may be a snow storm!During a snowstorm, you need to be in a building or vehicle!</Original>
+				<English>Attention was snowing! This may mean that soon there may be a snow storm!During a snowstorm, you need to be in a building or vehicle!</English>
 				<Russian>Внимание пошел снег! Это может означать что скоро может быть снежная буря! Во время снежной бури вам нужно находится в здании или технике!</Russian>
+			</Key>
+			<Key ID="STR_snow_storm_hint">
+				<Original>During a snow storm, you need to be in a building or technique in other cases you will receive damage!</Original>
+				<English>During a snow storm, you need to be in a building or technique in other cases you will receive damage!</English>
+				<Russian>Во время снежного шторма нужно быть в здании или технике в ином случаи Вы будете получать урон!</Russian>
 			</Key>
 		</Container>
 		<Container name="Hint_warning_vehicle_in_fire">
@@ -144,6 +193,49 @@
 				<Original>Fire in the car!</Original>
 				<English>Fire in the car!</English>
 				<Russian>Пожар в машине!</Russian>
+			</Key>
+		</Container>
+		<Container name="Name_respawn_point">
+			<Key ID="STR_Name_respawn_point">
+				<Original>The last position</Original>
+				<English>The last position</English>
+				<Russian>Последняя позицыя</Russian>
+			</Key>
+		</Container>
+	</Package>
+	<Package name="Ends">
+		<Container name="Description_end_1">
+			<Key ID="STR_Missions_Ending_1_title">
+				<Original>Mission completed!</Original>
+				<English>Mission completed!</English>
+				<Russian>Миссия выполнена!</Russian>
+			</Key>
+			<Key ID="STR_Missions_Ending_1_subtitle">
+				<Original>You managed to get out of the island!</Original>
+				<English>You managed to get out of the island!</English>
+				<Russian>Вам удалось выбраться с острова!</Russian>
+			</Key>
+			<Key ID="STR_Missions_Ending_1_description">
+				<Original>If you liked the mission, see my other missions, good luck!</Original>
+				<English>If you liked the mission, see my other missions, good luck!</English>
+				<Russian>Если вам понравилась миссия посмотрите другие мои миссии, УДАЧИ!</Russian>
+			</Key>
+		</Container>
+		<Container name="Description_end_2">
+			<Key ID="STR_Missions_Ending_2_title">
+				<Original>Mission failed!</Original>
+				<English>Mission failed!</English>
+				<Russian>Миссия провалена!</Russian>
+			</Key>
+			<Key ID="STR_Missions_Ending_2_subtitle">
+				<Original>The helicopter was badly damaged</Original>
+				<English>The helicopter was badly damaged</English>
+				<Russian>Вертолет был сильно поврежден</Russian>
+			</Key>
+			<Key ID="STR_Missions_Ending_2_description">
+				<Original>The helicopter was seriously damaged and could not take off, you lost the last hope of getting out of the island ...</Original>
+				<English>The helicopter was seriously damaged and could not take off, you lost the last hope of getting out of the island ...</English>
+				<Russian>Вертолет был серьезно поврежден, и не сможет взлететь, вы утратили последнюю надежду выбраться с острова...</Russian>
 			</Key>
 		</Container>
 	</Package>

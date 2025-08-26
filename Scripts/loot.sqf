@@ -20,8 +20,10 @@ if(isServer)then{
             ["_wite_list",
             [ 
             
-                ["arifle_MXC_F",100,1],
-                ["HandGrenade",100,3]
+                ["rhs_30Rnd_545x39_7N10_AK",10,ceil (random 10)],
+                ["rhs_100Rnd_762x54mmR_7BZ3",10,ceil (random 19)],
+                ["rhs_10Rnd_762x54mmR_7N1",10,ceil (random 10)],
+                ["HandGrenade",5,ceil (random 2)]
                 
             ]
         ]

@@ -8,6 +8,9 @@ onLoadName = $STR_Mission_name;
 onLoadMission = $STR_Missions_podpis;
 overviewTextLocked = $STR_Missions_podpis;
 
+viewDistance = 500; // Дальность видимости в метрах (например, 1000 м)
+objectViewDistance = 500; // Дальность видимости объектов (меньше или равно viewDistance)
+
 class CfgDebriefing
     {
         class End1

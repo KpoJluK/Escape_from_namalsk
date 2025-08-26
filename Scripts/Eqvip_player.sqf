@@ -36,7 +36,9 @@ player forceAddUniform selectRandom[
     "rhs_uniform_afghanka_winter_ttsko",
     "rhs_uniform_afghanka_winter_vsr",
     "rhs_uniform_afghanka_winter_vsr_2",
-    "rhs_uniform_afghanka_winter_vsr_3"
+    "rhs_uniform_afghanka_winter_vsr_3",
+    "rhs_uniform_6sh122_gloves_v1",
+    "rhs_uniform_6sh122_gloves_v2"
     ];
 player addVest selectRandom[
     "rhs_6b3_AK_2",

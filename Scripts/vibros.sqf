@@ -10,12 +10,7 @@ hint localize "STR_warning_vibros";
 // sound
 [_time_to_end] spawn{
     params["_time_to_end"];
-    waitUntil{
-            _time_to_end = _time_to_end - 1;
-            sleep 1;
-            _time_to_end < 30
-        };
-    for "_i" from 0 to ceil(_time_to_end / 30) - 1 do 
+    for "_i" from 0 to (ceil((_time_to_end / 30) - 1)) do 
     {
         Speeker_1 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
         Speeker_2 say3D ["Sound_nonification_sirena", 1500, 1, false, 0];
@@ -108,4 +103,5 @@ _coldEffect ppEffectAdjust [
     [0.2, 0.2, 0.2, 0]      // Лёгкая дымка   
 ];   
 _coldEffect ppEffectCommit 0;   
- 
+
+
